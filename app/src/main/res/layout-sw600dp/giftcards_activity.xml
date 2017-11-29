@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/xboxScroll"
+                android:layout_width="match_parent"
+                app:dsv_orientation="horizontal"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                app:dsv_orientation="horizontal"
+                android:id="@+id/psnScroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:layout_width="match_parent"
+                app:dsv_orientation="horizontal"
+                android:id="@+id/amazonScroll"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:layout_width="match_parent"
+                app:dsv_orientation="horizontal"
+                android:id="@+id/paypalScroll"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:layout_width="match_parent"
+                android:id="@+id/googleScroll"
+                app:dsv_orientation="horizontal"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:layout_width="match_parent"
+                app:dsv_orientation="horizontal"
+                android:id="@+id/itunesScroll"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:layout_width="match_parent"
+                app:dsv_orientation="horizontal"
+                android:id="@+id/steamScroll"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:layout_width="match_parent"
+                app:dsv_orientation="horizontal"
+                android:id="@+id/originScroll"
+                android:layout_height="wrap_content">
+            </com.yarolegovich.discretescrollview.DiscreteScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/toolbar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom">
+
+        <include layout="@layout/banner" />
+    </LinearLayout>
+</FrameLayout>
